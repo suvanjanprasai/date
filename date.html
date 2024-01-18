@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanna go on a date?</title>
+    <link rel="icon"
+        href="https://static.vecteezy.com/system/resources/previews/012/658/336/original/heart-shaped-love-icon-symbol-for-pictogram-app-website-logo-or-graphic-design-element-format-png.png"
+        type="image/x-icon">
+</head>
+<style>
+    body {
+        background-color: rgba(42, 122, 226, 0.87);
+
+    }
+
+    .combined {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .asking {
+        color: rgb(228, 228, 220);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 40px;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .button {
+        color: rgb(236, 234, 234);
+        background-color: rgba(12, 206, 44, 0.897);
+        border: none;
+        padding: 15px;
+        border-radius: 2px;
+        font-size: 15px;
+        cursor: pointer;
+
+    }
+
+    #yes {
+        position: absolute;
+        top: 80%;
+        left: 45%;
+    }
+
+    #no {
+        position: absolute;
+        top: 80%;
+        left: 55%;
+    }
+    .footer{
+    position: absolute;
+    top: 92%;
+    left: 52%;
+    transform: translate(-52%);
+    color: antiquewhite;
+    font-family:Arial, Helvetica, sans-serif;
+}
+</style>
+<script>
+
+
+function ChanceNaiXaina(){
+
+    x = (Math.floor(Math.random() * 300) + 1)
+    y = (Math.floor(Math.random() * 300) + 1)
+
+
+    const button = document.getElementById('no');
+
+    button.style.position = 'absolute';
+    button.style.left = `${x}px`;
+    button.style.top = `${y}px`;
+    
+}
+
+
+
+</script>
+<body>
+    <p class="asking">Wanna go on a date?</p>
+    <!-- <img src="cat.png" alt="">
+    <img src="heart.png" alt=""> -->
+    <img src="combined.png" width="300px" class="combined">
+
+    <button id="yes" class="button" onclick="location.href = 'seeyou.html'">YES</button>
+    <button id="no" class="button" onmouseover="ChanceNaiXaina()">NO</button>
+
+<footer class="footer">Made by: <a href="https://github.com/suvanjanprasai">Suvanjan</a></footer>
+</body>
+</html>
